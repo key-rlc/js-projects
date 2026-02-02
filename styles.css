@@ -1,0 +1,147 @@
+
+/* Base Colors */
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--clr-primary-5);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 7vh;
+    margin: 0px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10vh;
+    
+}
+
+.description {
+    width: 50%;
+    color:var(--clr-primary-9);
+}
+
+.menu{
+    position: relative;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vh
+}
+
+.menu a { 
+    height: 40px;   
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    transform:
+    translate(-50%, -50%)
+    rotate(calc(60deg * var(--i)))
+    translateY(0px) 
+    rotate(calc(-60deg * var(--i)))
+    scale(0);
+
+    transform-origin: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-primary-9);
+    background-color:var(--clr-primary-5);
+    border-color:var(--clr-primary-9);
+    padding: 25px 25px;
+    border-radius: 100%;
+    border-width: 2px;
+    border-style: solid;
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: 
+        transform 0.4s ease,
+        opacity 0.2s ease;   
+    
+    transition-delay: calc(0.08s * var(--i));
+}
+
+.button-toggle {
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh; 
+    color: #e0f7fa;
+    background-color: var(--clr-primary-4);
+    border-color:#e0f7fa;
+    border-style: solid;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    font-size: 22px;
+    z-index: 1;
+    box-shadow: var(--clr-primary-2) 0px 3px 20px -10px;
+}
+
+.menu.active .button-toggle {
+    transform: rotate(45deg);
+    background-color: var(--clr-primary-5);
+    box-shadow: var(--clr-primary-2) 0px 3px 20px -10px;
+}
+
+.button-toggle:hover {
+    background-color:var(--clr-primary-3);
+    transform: scale(1.1);
+}
+.menu.active .button-toggle:hover {
+    background-color:var(--clr-primary-3);
+}
+
+.menu.active a {
+    transform:
+        translate(-50%, -50%)
+        rotate(calc(60deg * var(--i)))
+        translateY(-130px)
+        rotate(calc(-60deg * var(--i)))
+        scale(1);
+
+    opacity: 1;
+    pointer-events: auto; 
+    box-shadow: var(--clr-primary-2) 0px 3px 20px -5px;
+    
+}
+
+.menu.active a:hover {
+    background-color:var(--clr-primary-3);
+    cursor: pointer;
+    box-shadow: #fcffff 0px 3px 20px -10px;
+}
+.menu:not(.active) a {
+     transition-delay: calc(0.08s * var(--i));
+}
