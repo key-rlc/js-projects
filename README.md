@@ -13,6 +13,7 @@ Este repositorio funciona como un portafolio en evolución, donde aplico fundame
 ├── 01-color-flipper/  
 ├── 02-counter/  
 ├── 03-reviews/  
+├── 04-navbar/
 
 Cada proyecto se encuentra dentro de su propia carpeta y puede ejecutarse de forma independiente.
 
