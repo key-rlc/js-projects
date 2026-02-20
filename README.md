@@ -33,7 +33,19 @@ Cada proyecto se encuentra dentro de su propia carpeta y puede ejecutarse de for
   Componente para mostrar reseñas dinámicas.  
   Conceptos: arrays, objetos y renderizado dinámico.
 
-*(Próximamente: Navbar, Sidebar, Modal y proyectos orientados a backend y full stack)*
+- 🧭 **Navbar**  
+  Barra de navegación responsive con menú colapsable.  
+  Conceptos: eventos, toggle de clases y comportamiento responsive.
+
+- 📂 **Sidebar**  
+  Menú lateral desplegable controlado mediante JavaScript.  
+  Conceptos: eventos, toggle de clases y comportamiento responsive.  
+
+- 🪟 **Modal**  
+  Ventana modal interactiva controlada con JavaScript.  
+  Conceptos: apertura y cierre mediante eventos.  
+
+*(Próximamente: Más proyectos orientados a backend y full stack)*
 
 ## 🛠 Tecnologías utilizadas
 
