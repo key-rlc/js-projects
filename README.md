@@ -14,6 +14,8 @@ Este repositorio funciona como un portafolio en evolución, donde aplico fundame
 ├── 02-counter/  
 ├── 03-reviews/  
 ├── 04-navbar/
+├── 05-sidebar/
+├── 06-modal/
 
 Cada proyecto se encuentra dentro de su propia carpeta y puede ejecutarse de forma independiente.
 
